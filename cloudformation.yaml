@@ -8,7 +8,7 @@ Parameters:
     Default: my-lambda-function
 
   Runtime:
-    Description: Lambda runtime
+    Description: lambda runtime
     Type: String
     Default: python3.12
     AllowedValues:
