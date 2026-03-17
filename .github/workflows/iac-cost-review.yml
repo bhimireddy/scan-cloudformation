@@ -1,0 +1,16 @@
+name: IaC Cost Estimator
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - '**.tf'
+      - '**.yaml'
+      - '**.yml'
+      - '!.github/**'
+
+jobs:
+  cost-review:
+    uses: bhimireddy/pricing-calculator/.github/workflows/iac-cost-review.yml@main
+    secrets:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
