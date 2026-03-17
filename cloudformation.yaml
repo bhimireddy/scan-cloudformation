@@ -19,7 +19,7 @@ Parameters:
       - java21
 
   MemorySize:
-    Description: Lambda memory size in MB
+    Description: lambda memory size in MB
     Type: Number
     Default: 128
     AllowedValues:
